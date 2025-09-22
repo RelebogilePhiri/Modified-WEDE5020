@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalize Your Treats - Phiri's Whiskful Treats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="../Images/POE pics/Phiri's Whiskful Delights Logo.png" alt="Phiri's Whiskful Treats Logo" class="logo">
+      <h1>Phiri's Whiskful Treats 🍰</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="products.html">🍪 Products</a></li>
+        <li><a href="enquiry.html">📩 Enquiry</a></li>
+        <li><a href="AboutUs.html">💖 AboutUs</a></li>
+        <li><a href="Contact.html">☎ Contact</a></li>
+         <li><a href="HomePage.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="personalization">
+    <h2>Personalize Your Treats 🧁</h2>
+    <p>Choose your favorite treats, flavors, sizes, and add your custom message to make it truly yours!</p>
+    
+    <form action="submit-personalization.html" method="POST">
+   
+      <label for="treat-type">Select Treat Type:</label>
+      <select name="treat-type" id="treat-type" required>
+        <option value="">--Choose a Treat--</option>
+        <option value="cake">Cake 🎂</option>
+        <option value="cookies">Cookies 🍪</option>
+        <option value="dessert">Dessert 🍮</option>
+      </select>
+
+    
+      <label for="flavor">Choose Flavor:</label>
+      <select name="flavor" id="flavor" required>
+        <option value="">--Choose a Flavor--</option>
+        <option value="vanilla">Vanilla</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="red-velvet">Red Velvet</option>
+        <option value="lemon">Lemon</option>
+      </select>
+
+   
+      <label for="size">Select Size:</label>
+      <select name="size" id="size" required>
+        <option value="">--Choose Size--</option>
+        <option value="small">Small (1-4 servings)</option>
+        <option value="medium">Medium (5-8 servings)</option>
+        <option value="large">Large (9-12 servings)</option>
+      </select>
+
+     
+      <label for="message">Add a Custom Message:</label>
+      <textarea name="message" id="message" rows="4" placeholder="Write your message here..."></textarea>
+
+   
+      <button type="submit" class="button">Submit Personalization</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2024 Phiri's Whiskful Treats. All rights reserved. 💕</p>
+  </footer>
+</body>
+</html>
